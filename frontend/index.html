@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3268d6">
+  <title>NSTAR | Inventory Management</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="brand-strip"><span>NSTAR CASH &amp; CARRY</span><span>INVENTORY MANAGEMENT SYSTEM</span></div>
+  <header class="dashboard-header">
+    <div class="header-inner">
+      <div class="brand-identity">
+        <div class="logo-frame"><img src="./nstarlogo.png" alt="NSTAR Cash & Carry logo"></div>
+        <div><h1>NSTAR</h1><p>Inventory Management</p></div>
+      </div>
+      <span class="header-context"><span class="live-dot"></span> Local Dashboard</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-intro"><div><p class="eyebrow">OPERATIONS / INVENTORY</p><h2>Dashboard Overview</h2><p>Monitor stock levels and manage your products in one place.</p></div><span class="refresh-note">↻ Auto-refresh every 5 seconds</span></div>
+
+    <section class="summary-section" aria-label="Inventory summary">
+      <article class="summary-card"><div class="card-icon">▣</div><h3>Total Products</h3><p id="total-products">0</p></article>
+      <article class="summary-card"><div class="card-icon">▤</div><h3>Total Units</h3><p id="total-units">0</p></article>
+      <article class="summary-card"><div class="card-icon warning-icon">!</div><h3>Low Stock / Out of Stock</h3><p id="low-stock">0</p></article>
+    </section>
+
+    <section class="inventory-section" aria-labelledby="inventory-heading">
+      <div class="section-heading"><div><h2 id="inventory-heading">Inventory</h2><p>Live product quantities and stock status</p></div><span class="section-tag">ALL PRODUCTS</span></div>
+      <div class="inventory-controls">
+        <input type="search" id="inventory-search" placeholder="Search SKU or product..." aria-label="Search inventory">
+        <select id="stock-filter" aria-label="Filter by stock status">
+          <option value="all">All Stock</option><option value="in-stock">In Stock</option><option value="low-stock">Low Stock</option><option value="out-of-stock">Out of Stock</option>
+        </select>
+      </div>
+             <div class="inventory-page-size"><label for="inventory-page-size">Rows per page</label><select id="inventory-page-size"><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></div>
+<div class="table-scroll"><table><thead><tr><th>SKU</th><th>Product</th><th>Category</th><th>Quantity</th><th>Min. Stock</th><th>Status</th></tr></thead><tbody id="inventory-table"></tbody></table></div>
+       <nav class="inventory-pagination" aria-label="Inventory pages"><span id="inventory-page-info" aria-live="polite">Loading products...</span><div class="pagination-buttons"><button type="button" id="inventory-prev" disabled>← Previous</button><span id="inventory-page-number">Page 1</span><button type="button" id="inventory-next" disabled>Next →</button></div></nav>
+    </section>
+
+    <section class="inventory-section" aria-labelledby="product-heading">
+      <div class="section-heading"><div><h2 id="product-heading">Add Product</h2><p>Register a new product in the NSTAR catalogue</p></div><span class="section-tag">PRODUCT MANAGEMENT</span></div>
+      <form id="add-product-form" class="product-create-form">
+        <div class="form-field"><label for="product-sku">SKU *</label><input id="product-sku" type="text" maxlength="100" required placeholder="e.g. NST-002"></div>
+        <div class="form-field product-name-field"><label for="product-name">Product Name *</label><input id="product-name" type="text" maxlength="250" required placeholder="e.g. Redpath Sugar"></div>
+        <div class="form-field"><label for="product-category">Category</label><input id="product-category" type="text" maxlength="120" placeholder="e.g. Dry Goods"></div>
+        <div class="form-field"><label for="product-brand">Brand</label><input id="product-brand" type="text" maxlength="120" placeholder="e.g. Redpath"></div>
+        <div class="form-field"><label for="product-pack-size">Pack Size</label><input id="product-pack-size" type="text" maxlength="100" placeholder="e.g. 20 kg"></div>
+        <div class="form-field"><label for="product-quantity">Initial Quantity *</label><input id="product-quantity" type="number" min="0" step="1" value="0" required></div>
+        <div class="form-field"><label for="product-minimum-stock">Minimum Stock *</label><input id="product-minimum-stock" type="number" min="0" step="1" value="0" required></div>
+        <div class="form-actions"><button type="submit" id="product-submit">Add Product</button></div>
+      </form>
+      <p id="product-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="inventory-section" aria-labelledby="manual-heading">
+      <div class="section-heading"><div><h2 id="manual-heading">Manual Stock Adjustment</h2><p>Add or remove stock without scanning a tag</p></div><span class="section-tag">STOCK CONTROL</span></div>
+      <form id="manual-stock-form" class="manual-stock-form">
+        <div class="form-field product-field"><label for="manual-sku">Product</label><select id="manual-sku" required><option value="">Select a product</option></select></div>
+        <div class="form-field"><label for="manual-action">Action</label><select id="manual-action" required><option value="ADD">ADD Stock</option><option value="REMOVE">REMOVE Stock</option></select></div>
+        <div class="form-field quantity-field"><label for="manual-quantity">Quantity</label><input type="number" id="manual-quantity" min="1" step="1" value="1" required></div>
+        <button type="submit" id="manual-submit">Update Inventory</button>
+      </form>
+      <p id="manual-message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="activity-section" aria-labelledby="activity-heading">
+      <div class="section-heading"><div><h2 id="activity-heading">Recent Activity</h2><p>Latest 10 inventory transactions</p></div><span class="section-tag">TRANSACTION LOG</span></div>
+      <div class="table-scroll"><table><thead><tr><th>Time</th><th>SKU</th><th>Product</th><th>Action</th><th>Change</th><th>Quantity</th></tr></thead><tbody id="activity-table"></tbody></table></div>
+    </section>
+    <footer class="dashboard-footer">NSTAR Cash &amp; Carry · Internal inventory dashboard</footer>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

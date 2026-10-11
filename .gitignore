@@ -1,0 +1,31 @@
+# PlatformIO build artifacts
+.pio/
+
+# VS Code generated files
+.vscode/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local inventory databases and backups
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Business CSV exports
+backend/*.csv
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local temporary files
+*tempCodeRunnerFile*
+
+# Private Wi-Fi configuration
+src/wifi_config.h

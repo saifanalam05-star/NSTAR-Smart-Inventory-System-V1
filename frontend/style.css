@@ -1,0 +1,84 @@
+/* NSTAR branded inventory dashboard — presentation only; no API logic here. */
+:root { --blue:#3268d6; --sky:#45a8e3; --ice:#eaf4fb; --ink:#111827; --muted:#64748b; --border:#e2e8f0; --white:#fff; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--ice); color:var(--ink); line-height:1.45; }
+.brand-strip { background:var(--blue); color:#fff; padding:9px max(24px,calc((100% - 1180px)/2)); display:flex; justify-content:space-between; gap:12px; font-size:11px; font-weight:700; letter-spacing:.08em; }
+.dashboard-header { background:#111; color:#fff; }
+.header-inner { max-width:1180px; margin:auto; padding:17px 24px; display:flex; justify-content:space-between; align-items:center; gap:20px; }
+.brand-identity { display:flex; align-items:center; gap:14px; }
+.logo-frame { width:68px; height:55px; background:#fff; border-radius:8px; display:flex; align-items:center; justify-content:center; padding:5px; overflow:hidden; }
+.logo-frame img { max-width:100%; max-height:100%; object-fit:contain; }
+.dashboard-header h1 { margin:0; font-size:24px; letter-spacing:.04em; }
+.dashboard-header p { margin:0; color:#bfc6d1; font-size:13px; }
+.header-context { display:flex; align-items:center; gap:8px; border:1px solid #374151; border-radius:100px; padding:8px 12px; color:#e5e7eb; font-size:12px; }
+.live-dot { width:8px; height:8px; border-radius:50%; background:#22c55e; }
+main { max-width:1180px; margin:0 auto; padding:34px 24px 48px; }
+.page-intro { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:24px; }
+.eyebrow { color:var(--blue)!important; font-size:11px!important; font-weight:700; letter-spacing:.1em; }
+.page-intro h2 { margin:4px 0; font-size:26px; }
+.page-intro p { margin:4px 0; color:var(--muted); font-size:14px; }
+.refresh-note { color:var(--blue); background:#fff; padding:9px 12px; border:1px solid #d8e5fa; border-radius:8px; font-size:12px; white-space:nowrap; }
+.summary-section { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-bottom:25px; }
+.summary-card,.inventory-section,.activity-section { background:#fff; border:1px solid #e6edf5; border-radius:12px; box-shadow:0 4px 16px rgba(30,64,120,.06); }
+.summary-card { padding:22px; }
+.card-icon { width:34px; height:34px; border-radius:9px; display:grid; place-items:center; background:#e8f0ff; color:var(--blue); font-size:20px; font-weight:bold; margin-bottom:12px; }
+.warning-icon { color:#b45309; background:#fef3c7; }
+.summary-card h3 { color:var(--muted); font-size:13px; margin:0; font-weight:600; }
+.summary-card p { margin:6px 0 0; font-size:30px; font-weight:750; }
+.inventory-section,.activity-section { padding:24px; margin-bottom:24px; }
+.section-heading { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:20px; }
+.section-heading h2 { margin:0 0 4px; font-size:19px; }
+.section-heading p { margin:0; color:var(--muted); font-size:13px; }
+.section-tag { font-size:10px; font-weight:700; color:var(--blue); background:#eff6ff; padding:7px 10px; border-radius:20px; white-space:nowrap; }
+.inventory-controls { display:flex; gap:12px; margin-bottom:18px; }
+input,select,button { font:inherit; }
+.inventory-controls input,.inventory-controls select,.manual-stock-form input,.manual-stock-form select { border:1px solid #cbd5e1; border-radius:7px; background:#fff; padding:11px 12px; color:var(--ink); font-size:13px; min-height:42px; }
+.inventory-controls input { flex:1; min-width:0; }
+input:focus,select:focus,button:focus-visible { outline:2px solid var(--sky); outline-offset:2px; }
+.table-scroll { overflow-x:auto; }
+table { border-collapse:collapse; width:100%; font-size:13px; }
+th { text-align:left; color:#475569; background:#f1f5f9; font-size:11px; letter-spacing:.03em; padding:13px; white-space:nowrap; }
+td { padding:13px; border-bottom:1px solid var(--border); }
+tbody tr:hover { background:#f8fbff; }
+.status-badge { display:inline-block; padding:5px 10px; border-radius:20px; font-size:11px; font-weight:700; white-space:nowrap; }
+.status-badge.in-stock { background:#dcfce7; color:#166534; }
+.status-badge.low-stock { background:#fef3c7; color:#92400e; }
+.status-badge.out-of-stock { background:#fee2e2; color:#991b1b; }
+.manual-stock-form { display:flex; flex-wrap:wrap; align-items:end; gap:12px; }
+.form-field { display:flex; flex-direction:column; gap:7px; min-width:145px; flex:1; }
+.form-field label { font-size:12px; font-weight:700; color:#475569; }
+.product-field { flex:2; min-width:220px; }
+.quantity-field { max-width:145px; }
+.manual-stock-form button { border:0; border-radius:7px; background:var(--blue); color:#fff; padding:12px 18px; font-size:13px; font-weight:700; min-height:42px; cursor:pointer; }
+.manual-stock-form button:hover { background:#2454b9; }
+.manual-stock-form button:disabled { opacity:.6; cursor:not-allowed; }
+#manual-message { margin:12px 0 0; font-size:13px; color:#334155; }
+#manual-message:empty { display:none; }
+.dashboard-footer { text-align:center; color:#64748b; font-size:12px; padding:10px 0; }
+@media(max-width:800px) { .summary-section { grid-template-columns:1fr; } .page-intro { align-items:flex-start; flex-direction:column; } .inventory-section,.activity-section { padding:17px; } }
+@media(max-width:520px) { .brand-strip { font-size:9px; } .header-context { display:none; } .inventory-controls { flex-direction:column; } .section-tag { display:none; } .quantity-field { max-width:none; } }
+
+/* Product creation form uses the same NSTAR controls as stock adjustments. */
+.product-create-form { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; align-items:end; }
+.product-create-form .form-field { min-width:0; }
+.product-create-form .product-name-field { grid-column:span 2; }
+.product-create-form input { width:100%; border:1px solid #cbd5e1; border-radius:7px; background:#fff; padding:11px 12px; color:var(--ink); font-size:13px; min-height:42px; }
+.product-create-form .form-actions { display:flex; align-items:end; }
+.product-create-form button { width:100%; border:0; border-radius:7px; background:var(--blue); color:#fff; padding:12px 18px; font-size:13px; font-weight:700; min-height:42px; cursor:pointer; }
+.product-create-form button:hover { background:#2454b9; }
+.product-create-form button:disabled { opacity:.6; cursor:not-allowed; }
+#product-message { margin:12px 0 0; font-size:13px; color:#334155; }
+#product-message:empty { display:none; }
+@media(max-width:800px) { .product-create-form { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:520px) { .product-create-form { grid-template-columns:1fr; } .product-create-form .product-name-field { grid-column:auto; } }
+
+/* Server-side inventory pagination */
+.inventory-page-size { display:flex; justify-content:flex-end; align-items:center; gap:9px; margin:-4px 0 14px; font-size:12px; color:var(--muted); }
+.inventory-page-size select { padding:7px 10px; border:1px solid #cbd5e1; border-radius:7px; background:#fff; color:var(--ink); }
+.inventory-pagination { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-top:18px; font-size:13px; color:var(--muted); }
+.pagination-buttons { display:flex; align-items:center; gap:10px; }
+.pagination-buttons button { padding:9px 13px; border:1px solid #cbd5e1; background:#fff; border-radius:7px; color:var(--blue); font-weight:700; cursor:pointer; }
+.pagination-buttons button:hover:not(:disabled) { background:#eff6ff; }
+.pagination-buttons button:disabled { opacity:.45; cursor:not-allowed; }
+#inventory-page-number { white-space:nowrap; color:var(--ink); }
+@media(max-width:520px) { .inventory-pagination { align-items:flex-start; flex-direction:column; } }

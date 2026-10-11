@@ -1,0 +1,472 @@
+{
+  "preview_only": true,
+  "counts": {
+    "total_rows": 4096,
+    "type_variable": 1846,
+    "eligible_for_import": 3724,
+    "type_variation": 2250,
+    "missing_sku": 371,
+    "duplicate_sku_in_csv": 1
+  },
+  "sample_products": [
+    {
+      "sku": "OFW014",
+      "product_name": "Red Bundling Tape - Case",
+      "category": "Office & Warehouse, Office & Warehouse > Warehouse Supplies > Tape, Office & Warehouse > Warehouse Supplies",
+      "brand": "GENERIC",
+      "pack_size": "Case [192]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "OFW003",
+      "product_name": "1 3/4 x 200ft Thermal Paper Rolls",
+      "category": "Office & Warehouse > Retail Supplies > Thermal Paper Rolls",
+      "brand": "GENERIC",
+      "pack_size": "Case [50]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS127",
+      "product_name": "1 Ply White Dinner Napkins 1/8 Fold - Mayfair, 250 Pack",
+      "category": "Disposable > Tableware > Napkins",
+      "brand": "GENERIC",
+      "pack_size": "Each [250]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS125",
+      "product_name": "1 Ply White Dinner Napkins 1/8 Fold - Mayfair, 250 Pack",
+      "category": "Banquet Halls & Event Venues​, Cafés & Coffee Shops, Disposable, Hotels​, Disposable > Tableware > Napkins, Restaurants, Disposable > Tableware, Thai Restaurants",
+      "brand": "GENERIC",
+      "pack_size": "Case [3000]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS135",
+      "product_name": "1 Ply White Interfold Napkins - Mayfair, 500 Pack",
+      "category": "Disposable, Food Trucks​, Disposable > Tableware > Napkins, Disposable > Tableware",
+      "brand": "GENERIC",
+      "pack_size": "Each [500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS134",
+      "product_name": "1 Ply White Interfold Napkins - Mayfair, Case",
+      "category": "Banquet Halls & Event Venues​, Hotels​, Disposable > Tableware > Napkins",
+      "brand": "GENERIC",
+      "pack_size": "Case [12 x 500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS133",
+      "product_name": "1 Ply White Junior Dispenser Napkins 1/6 Fold - Mayfair, 500 Pack",
+      "category": "Disposable, Disposable > Tableware > Napkins, Disposable > Tableware",
+      "brand": "GENERIC",
+      "pack_size": "Each [500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS132",
+      "product_name": "1 Ply White Junior Dispenser Napkins - Mayfair, Case",
+      "category": "Bakeries, Banquet Halls & Event Venues​, Burger & Fast Food Restaurants​, Cafés & Coffee Shops, Caribbean Restaurants​, Caterers​, Chinese Restaurants​, Hotels​, Indian Restaurants​, Mexican Restaurants​, Disposable > Tableware > Napkins, Office & Breakroom​, Pakistan Restaurant​, Pizza Shops, Restaurants, Schools\\, Daycares & Institutions​, Shawarma & Middle Eastern Restaurants",
+      "brand": "GENERIC",
+      "pack_size": "Case [18 x 500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS124",
+      "product_name": "1 Ply White Lunch Napkins - Mayfair, 500 Pack",
+      "category": "Disposable > Tableware > Napkins",
+      "brand": "GENERIC",
+      "pack_size": "Each [500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS123",
+      "product_name": "1 Ply White Lunch Napkins - Mayfair, Case",
+      "category": "Banquet Halls & Event Venues​, Burger & Fast Food Restaurants​, Caribbean Restaurants​, Caterers​, Chinese Restaurants​, Food Trucks​, Hotels​, Indian Restaurants​, Mexican Restaurants​, Disposable > Tableware > Napkins, Office & Breakroom​, Pakistan Restaurant​, Summer Foodservice Essentials, Thai Restaurants",
+      "brand": "GENERIC",
+      "pack_size": "Case [12 x 500]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "FTC084",
+      "product_name": "Checkered Paper Food Trays – Red & White, 1/2lb, Case",
+      "category": "Packaging > Food Take-Out Containers, Food Trucks​, Packaging, Packaging > Food Take-Out Containers > Paper Takeout Containers, Shawarma & Middle Eastern Restaurants, Takeout & Delivery Deals",
+      "brand": "GENERIC",
+      "pack_size": "Case [1000]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "CS031",
+      "product_name": "M2 10 Inch Car Squeege W/20 Inch Wooden Handle - Case",
+      "category": "Cleaning & Janitorial, Cleaning & Janitorial > Cleaning Supplies > Cleaning Accessories, Cleaning & Janitorial > Cleaning Supplies",
+      "brand": "GENERIC",
+      "pack_size": "Case [12], Each [1]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "CS028",
+      "product_name": "10 Inch Plastic Window Squeege  - Each",
+      "category": "Banquet Halls & Event Venues​, Cleaning & Janitorial > Cleaning Supplies > Cleaning Accessories, Convenience Stores​, Food Processing​, Hotels​, Schools\\, Daycares & Institutions​, Warehouse & Industrial​",
+      "brand": "GENERIC",
+      "pack_size": "Each [1]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "SWB022",
+      "product_name": "White Cake Boxes - 10\" x 10\" x 2\"(1/2\"), EB, Case",
+      "category": "Packaging > Sweets\\, Bakery & Deli > Cake Box, Packaging > Sweets\\, Bakery & Deli",
+      "brand": "EB",
+      "pack_size": "Case [100]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "SWB001",
+      "product_name": "White Cake Boxes - 10\" x 10\" x 5\", EB, Case",
+      "category": "Bakeries, Cafés & Coffee Shops, Packaging > Sweets\\, Bakery & Deli > Cake Box, Packaging > Sweets\\, Bakery & Deli",
+      "brand": "EB",
+      "pack_size": "Case [100]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "SWB008",
+      "product_name": "White Cake Boxes - 10\" x 7\" x 3\"(1/2\"), EB, Case",
+      "category": "Bakeries, Packaging > Sweets\\, Bakery & Deli > Cake Box, Packaging > Sweets\\, Bakery & Deli",
+      "brand": "EB",
+      "pack_size": "Case [200]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS167",
+      "product_name": "10\" Black Paper Milkshake Straw - 6mm - 250 Pack",
+      "category": "Disposable, Disposable > Drinkware, Disposable > Drinkware > Straws",
+      "brand": "ECO",
+      "pack_size": "Each [250]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS166",
+      "product_name": "10\" Black Paper Milkshake Straw - 6mm - Case",
+      "category": "Disposable, Disposable > Drinkware, Disposable > Drinkware > Straws",
+      "brand": "ECO",
+      "pack_size": "Case [12 x 250]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS161",
+      "product_name": "10\" Brown Paper Bubbletea Straw  Indiviudally Wrapped - Sharp End 12mm - 100 Pack",
+      "category": "Disposable, Disposable > Drinkware, Disposable > Drinkware > Straws",
+      "brand": "ECO",
+      "pack_size": "Each [100]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    },
+    {
+      "sku": "DIS160",
+      "product_name": "10″ Brown Paper Bubble Tea Straw Individually Wrapped – Sharp End 12mm – Case",
+      "category": "Bubble Tea Shops​, Food Trucks​, Ice Cream & Dessert Shops​, Disposable > Drinkware > Straws",
+      "brand": "ECO",
+      "pack_size": "Case [12 x 100]",
+      "quantity": 0,
+      "minimum_stock": 0,
+      "type": "variable"
+    }
+  ],
+  "issues": [
+    {
+      "row": 64,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 261,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 263,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 268,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 276,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 278,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 283,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 285,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 311,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 313,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 317,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 373,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 375,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 378,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 380,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 385,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 387,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 392,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 427,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 429,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 718,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 902,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 1052,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 1145,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 1692,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 1897,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2014,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2106,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2108,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2227,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2251,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2263,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2264,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2266,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2329,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2369,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2474,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2476,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2533,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2671,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2793,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2972,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2974,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2975,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 2977,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 3051,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 3054,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 3055,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 3056,
+      "sku": "",
+      "reason": "Missing SKU"
+    },
+    {
+      "row": 3057,
+      "sku": "",
+      "reason": "Missing SKU"
+    }
+  ],
+  "issues_truncated": true,
+  "notes": [
+    "No database changes were made.",
+    "Both parent products and variations are previewed when they have distinct SKUs.",
+    "Parent/variation stock relationships require review before enabling import.",
+    "All preview quantities default to zero; CSV prices are ignored."
+  ]
+}

@@ -1,0 +1,19 @@
+name: Publish Component
+
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+      
+      - name: Upload
+        uses: espressif/upload-components-ci-action@v2
+        with:
+          components: "rc522:."
+          namespace: abobija
+          api_token: ${{ secrets.IDF_COMPONENTS_API_TOKEN }}
