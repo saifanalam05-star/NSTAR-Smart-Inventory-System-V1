@@ -1,31 +1,37 @@
-# PlatformIO build artifacts
+# PlatformIO
 .pio/
+.vscode/.browse.c_cpp.db*
 
-# VS Code generated files
-.vscode/
+# Wi-Fi credentials
+src/wifi_config.h
 
-# Python generated files
+# Environment variables
+.env
+.env.*
+
+# Python
 __pycache__/
-*.py[cod]
+*.pyc
 .venv/
 venv/
+.ipynb_checkpoints/
 
-# Local inventory databases and backups
+# SQLite databases
 *.db
-*.db-*
+*.db-shm
+*.db-wal
 *.sqlite
 *.sqlite3
 
-# Business CSV exports
-backend/*.csv
+# Private exports and backups
+*.csv
+*.bak
+*.db-journal
 
-# Secrets and local configuration
-.env
-.env.*
-!.env.example
+# Operating system
+.DS_Store
+Thumbs.db
 
-# Local temporary files
-*tempCodeRunnerFile*
-
-# Private Wi-Fi configuration
-src/wifi_config.h
+# VS Code temporary files
+tempCodeRunnerFile.py
+.vscode/
